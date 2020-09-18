@@ -1,57 +1,125 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html {
   color: white;
+  font-family: "Nunito";
+  font-size: 20px;
+  background-color: #fb6e6d;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  height: 10vh;
+  background-color: #fc5655;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h1 {
+  font-weight: 500;
+  font-size: 2em;
 }
+
+nav i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.main-content {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: scroll;
+}
+
+.main-content .todo {
+  margin-top: 10px;
+  color: white;
+  text-align: left;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  width: 85%;
+  background-color: #fca2a2;
+  border-radius: 3px;
+  -webkit-box-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.473);
+          box-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.473);
+}
+
+.main-content .task-divider {
+  font-weight: 400;
+  font-size: 1.2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.2em 0 0 1.6em;
+}
+
+.main-content .task-divider .done {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+.main-content .success {
+  text-decoration: line-through;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  text-decoration-thickness: 2px;
+  -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7;
+}
+
+footer {
+  height: 15vh;
+  background-color: #ff5a59;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+}
+
+footer .rounded-todo {
+  display: inline-block;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #db4f4e;
+}
+
+footer .rounded-success {
+  background-color: #63b332;
+}
+/*# sourceMappingURL=index.css.map */
