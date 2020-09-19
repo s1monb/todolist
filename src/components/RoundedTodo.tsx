@@ -17,7 +17,7 @@ function RoundedTodo({ children, id }: any) {
     if (localStorage.getItem(id) === today.toDateString()) {
       setTodo(true);
     }
-  }, []);
+  }, [id]);
 
   return (
     <button
