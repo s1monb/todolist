@@ -14,7 +14,7 @@ function App() {
           onClick={() => {
             setAddTodo(!showAddTodo);
           }}
-          className="fal fa-plus"
+          className={`fal fa-plus ${showAddTodo && "rotate45"}`}
         ></i>
       </nav>
 

@@ -161,4 +161,9 @@ footer .rounded-success {
 .smaller {
   height: 68vh;
 }
+
+.rotate45 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 /*# sourceMappingURL=index.css.map */
