@@ -61,19 +61,19 @@ function App() {
         ))}
       </div>
       <footer>
-        <RoundedTodo>
+        <RoundedTodo id="1">
           <i className="fal fa-toothbrush"></i>
         </RoundedTodo>
-        <RoundedTodo>
+        <RoundedTodo id="2">
           <i className="fal fa-dumbbell"></i>
         </RoundedTodo>
-        <RoundedTodo>
+        <RoundedTodo id="3">
           <i className="fal fa-books"></i>
         </RoundedTodo>
-        <RoundedTodo>
+        <RoundedTodo id="4">
           <i className="fal fa-comments"></i>
         </RoundedTodo>
-        <RoundedTodo>
+        <RoundedTodo id="5">
           <i className="fal fa-moon"></i>
         </RoundedTodo>
       </footer>

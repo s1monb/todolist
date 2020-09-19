@@ -22,7 +22,7 @@ function Todo({ setTodos, setError }: any) {
     if (isDuplicate(tasks)) {
       setError("Taskname already taken");
     } else {
-      if (todo == "") {
+      if (todo === "") {
         setError("Taskname cannot be empty");
       } else {
         setError("");
