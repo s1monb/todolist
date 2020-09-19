@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Todo({ children }: any) {
-  const [success, setTodo] = useState(false);
+function Todo({ children, setTodos, todos, setTodosDone }: any) {
+  const done = () => {
+    const lsDone: number = parseInt(localStorage.getItem("done") || "0");
+    const text = children;
+    todos = todos.filter((todo: any) => {
+      return todo !== text;
+    });
+    setTodos(todos);
+    localStorage.setItem("tasks", todos);
+    setTodosDone(lsDone + 1);
+    localStorage.setItem("done", (lsDone + 1).toString());
+  };
 
   return (
-    <button
-      onClick={() => setTodo(!success)}
-      className={`todo ${success && "success"}`}
-    >
+    <button onClick={done} className="todo">
       {children}
     </button>
   );

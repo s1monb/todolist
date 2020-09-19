@@ -26,6 +26,12 @@ nav {
           box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+nav p {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 nav h1 {
   font-weight: 500;
   font-size: 2em;
@@ -84,16 +90,6 @@ nav i {
   -webkit-box-ordinal-group: 7;
       -ms-flex-order: 6;
           order: 6;
-}
-
-.main-content .success {
-  text-decoration: line-through;
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
-  text-decoration-thickness: 2px;
-  -webkit-box-ordinal-group: 8;
-      -ms-flex-order: 7;
-          order: 7;
 }
 
 footer {

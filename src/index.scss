@@ -18,6 +18,12 @@ nav {
   justify-content: center;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 
+  p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
   h1 {
     font-weight: 500;
     font-size: 2em;
@@ -61,12 +67,6 @@ nav {
     .done {
       order: 6;
     }
-  }
-  .success {
-    text-decoration: line-through;
-    text-decoration-color: white;
-    text-decoration-thickness: 2px;
-    order: 7;
   }
 }
 
