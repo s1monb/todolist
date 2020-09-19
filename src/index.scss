@@ -97,17 +97,17 @@ footer {
   height: 7vh;
   display: flex;
   input {
-    width: 60%;
+    width: 70%;
     outline: none;
-    padding: 0.5vh 5%;
-    height: 6vh;
+    padding-left: 5%;
+    height: 100%;
     border: none;
     font-size: 0.8em;
     border-radius: 0;
   }
   button {
     width: 30%;
-    height: 7vh;
+    height: 100%;
     border: none;
     margin: 0;
     padding: 0;
@@ -127,4 +127,30 @@ footer {
 
 .rotate45 {
   transform: rotate(45deg);
+}
+
+@media (orientation: landscape) {
+  nav {
+    height: 15vh;
+    p {
+      top: 15px;
+    }
+    i {
+      top: 15px;
+    }
+  }
+
+  .new-todo-form {
+    height: 12vh;
+  }
+
+  .main-content {
+    height: 65vh;
+  }
+  .smaller {
+    height: 53vh;
+  }
+  footer {
+    height: 20vh;
+  }
 }

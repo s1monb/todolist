@@ -22,11 +22,15 @@ function Todo({ setTodos, setError }: any) {
     if (isDuplicate(tasks)) {
       setError("Taskname already taken");
     } else {
-      setError("");
-      tasks.push(todo);
-      setTodos(tasks);
-      localStorage.setItem("tasks", JSON.stringify(tasks));
-      setTodo("");
+      if (todo == "") {
+        setError("Taskname cannot be empty");
+      } else {
+        setError("");
+        tasks.push(todo);
+        setTodos(tasks);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        setTodo("");
+      }
     }
   };
 

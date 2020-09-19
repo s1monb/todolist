@@ -36,6 +36,7 @@ function App() {
         <i
           onClick={() => {
             setAddTodo(!showAddTodo);
+            setError("");
           }}
           className={`fal fa-plus ${showAddTodo && "rotate45"}`}
         ></i>
