@@ -68,8 +68,8 @@ nav i {
   width: 85%;
   background-color: #fca2a2;
   border-radius: 3px;
-  -webkit-box-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.473);
-          box-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.473);
+  -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .main-content .task-divider {
@@ -116,10 +116,49 @@ footer .rounded-todo {
   width: 60px;
   height: 60px;
   border-radius: 100%;
+  font-size: 1.2em;
+  color: white;
   background-color: #db4f4e;
 }
 
 footer .rounded-success {
   background-color: #63b332;
+}
+
+.new-todo-form {
+  width: 100%;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new-todo-form input {
+  width: 60%;
+  outline: none;
+  padding: 0.5vh 5%;
+  height: 6vh;
+  border: none;
+  font-size: 0.8em;
+  border-radius: 0;
+}
+
+.new-todo-form button {
+  width: 30%;
+  height: 7vh;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.7em;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.smaller {
+  height: 68vh;
 }
 /*# sourceMappingURL=index.css.map */
